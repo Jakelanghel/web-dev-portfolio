@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { getTheme } from "./theme/getTheme";
+import Router from "./components/router/Router";
 
 function App() {
+  const [isDark, setIsDark] = useState(true);
+  const theme = getTheme(isDark);
+
   return (
-    <div>
-      <p>Clean React App</p>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router />
+    </ThemeProvider>
   );
 }
 
