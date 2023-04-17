@@ -1,7 +1,7 @@
 import Typewriter from "./typewriter/Typewriter";
-import { StyledCodeLine } from "./containers/CodeLine";
+import { StyledCodeLine } from "./CodeLine.Styled";
 
-export const getCodeBlock = (codeData) => {
+export const getCodeLines = (codeData) => {
   const lineElements = codeData.map((lineData, i) => {
     const line = lineData.map((data, i) => {
       if (data.multi) {

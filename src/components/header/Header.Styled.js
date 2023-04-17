@@ -4,10 +4,10 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 3rem;
+  padding: 2rem 0;
 
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: var(--dark-accent);
     letter-spacing: 5px;
     margin: 0;
@@ -18,13 +18,11 @@ export const StyledHeader = styled.header`
   }
 
   .nav-toggle {
-    background: transparent;
-    border: 0;
     cursor: pointer;
     position: absolute;
     right: 0;
     z-index: 1000;
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
 
   .hamburger {
@@ -36,8 +34,8 @@ export const StyledHeader = styled.header`
   .hamburger::before,
   .hamburger::after {
     background-color: var(--dark-accent);
-    width: 30px;
-    height: 3px;
+    width: 35px;
+    height: 4px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
   }

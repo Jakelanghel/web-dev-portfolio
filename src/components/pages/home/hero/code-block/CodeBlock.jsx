@@ -1,12 +1,12 @@
 import React from "react";
-import { StyledCodeContainer } from "./containers/CodeContainer";
+import { StyledCodeBlock } from "./CodeBlock.Styled.js";
 import { codeData } from "./code-data/codeData";
-import { getCodeBlock } from "./getCodeBlock";
+import { getCodeLines } from "./code-lines/getCodeLines.jsx";
 
 const CodeBlock = () => {
-  const codeLines = getCodeBlock(codeData);
+  const codeLines = getCodeLines(codeData);
 
-  return <StyledCodeContainer>{codeLines}</StyledCodeContainer>;
+  return <StyledCodeBlock>{codeLines}</StyledCodeBlock>;
 };
 
 export default CodeBlock;

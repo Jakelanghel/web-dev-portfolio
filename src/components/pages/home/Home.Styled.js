@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.main`
-  display: flex;
-  flex-direction: column;
-
+  width: 100%;
   height: 100%;
 
   button {
@@ -12,13 +10,14 @@ export const StyledHome = styled.main`
     letter-spacing: 1px;
     color: var(--dark-accent);
     background-color: transparent;
-    border: none;
-    border-top: solid 1px var(--dark-accent);
-    border-bottom: solid 1px var(--dark-accent);
     border: solid 3px var(--dark-accent);
     border-radius: 10px;
     padding: 1rem 2rem;
-    align-self: center;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+
   }
 
   @media screen and (min-width: 400px) {

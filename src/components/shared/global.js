@@ -46,21 +46,34 @@ export const GlobalStyles = createGlobalStyle`
 
     * {
         box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    h1,
-    h2,
-    h3,
-    p {
         margin: 0;
         padding: 0;
     }
 
     body {
         padding-bottom: 0;
-        background-color: var(--secondary-dark);
+        background-color: ${({ theme }) => theme.main.primaryBG};
+        font-family: 'Roboto', sans-serif;
     }
+
+    img, 
+    button {
+        display: block;
+    }
+
+    .container-app {
+        height: 100%;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .pg-pd {
+        padding-top: 2rem;
+    }
+
+
 
    
     .filter-white {

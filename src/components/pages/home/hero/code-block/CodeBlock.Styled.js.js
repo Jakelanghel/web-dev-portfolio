@@ -1,13 +1,9 @@
 import styled from "styled-components";
 
-export const StyledCodeContainer = styled.div`
-  min-height: 300px;
-  /* max-width: 400px; */
-  padding: 1rem;
-
-  margin: 3rem auto;
-  margin-bottom: 5rem;
-  border: solid 2px red;
+export const StyledCodeBlock = styled.div`
+  min-height: 275px;
+  max-width: 375px;
+  margin: 0 auto;
 
   .container-stx {
     font-size: 1rem;
