@@ -2,7 +2,7 @@ export const getTheme = (isDark) => {
   const theme = {
     main: isDark
       ? {
-          primaryBG: "#1D1D1D",
+          primaryBG: "#282C34",
           secondaryBG: "#181818",
           accent: "#58AFEF",
         }
