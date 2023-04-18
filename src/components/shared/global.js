@@ -75,6 +75,12 @@ export const GlobalStyles = createGlobalStyle`
         padding-top: 8rem;
     }
 
+    @media screen and (min-width: 950px) {
+        .pg-pd {
+            padding-top: 12rem;
+        }
+    }
+
 
 
    

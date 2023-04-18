@@ -9,7 +9,6 @@ export const StyledAbout = styled.div`
   padding-top: 3rem;
 
   h2 {
-    max-width: 400px;
     font-size: 3rem;
     letter-spacing: 2px;
     text-transform: capitalize;
@@ -38,6 +37,18 @@ export const StyledAbout = styled.div`
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 0 3rem;
+    padding-top: 0;
+    padding-left: 5rem;
+
+    .about-body {
+      max-width: 550px;
+      font-size: 1.5rem;
+      margin: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 4rem;
+    }
   }
 `;

@@ -6,16 +6,16 @@ const About = () => {
   return (
     <StyledAbout>
       <motion.h2
-        initial={{ y: 2000 }}
+        initial={{ y: -2000 }}
         transition={{ ease: "easeIn", duration: 0.5 }}
         animate={{ y: 0 }}
       >
         Hi I'm Jake!
       </motion.h2>
       <motion.p
-        initial={{ x: 2000 }}
+        initial={{ y: 2000 }}
         transition={{ ease: "easeIn", duration: 0.75 }}
-        animate={{ x: 0, delay: 1 }}
+        animate={{ y: 0, delay: 1 }}
         className="about-body"
       >
         I'm a Front-End Developer who's passionate about building beautiful,
@@ -23,9 +23,9 @@ const About = () => {
       </motion.p>
 
       <motion.p
-        initial={{ x: 2000 }}
+        initial={{ y: 2000 }}
         transition={{ ease: "easeIn", duration: 1 }}
-        animate={{ x: 0 }}
+        animate={{ y: 0 }}
         className="about-body"
       >
         I love building things for the web! Whether it be using the latest
@@ -34,9 +34,9 @@ const About = () => {
       </motion.p>
 
       <motion.p
-        initial={{ x: 2000 }}
+        initial={{ y: 2000 }}
         transition={{ ease: "easeIn", duration: 1.25 }}
-        animate={{ x: 0 }}
+        animate={{ y: 0 }}
         className="about-body"
       >
         Highly motivated, quick learner with eagerness to learn the whole front

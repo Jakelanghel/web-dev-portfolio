@@ -50,11 +50,10 @@ export const StyledSkills = styled(motion.div)`
 
   @media screen and (min-width: 900px) {
     margin: 0;
+    padding-top: 12rem;
 
-    h3 {
-      min-width: 100px;
-      display: flex;
-      justify-content: center;
+    h2 {
+      font-size: 4rem;
     }
 
     .container-skill {

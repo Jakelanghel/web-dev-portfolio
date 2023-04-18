@@ -78,7 +78,6 @@ export const StyledHome = styled.main`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
 
     .container-hero {
       height: 500px;
@@ -86,8 +85,8 @@ export const StyledHome = styled.main`
 
     .container-hero,
     .container-about {
-      max-width: 500px;
-      width: 50%;
+      max-width: 50%;
+      min-width: 50%;
     }
 
     .container-about {
