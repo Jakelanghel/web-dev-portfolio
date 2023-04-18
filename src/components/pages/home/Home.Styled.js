@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledHome = styled.main`
   width: 100%;
   height: 100%;
+  /* overflow: hidden; */
 
   button {
     font-size: 1.25rem;
@@ -13,11 +14,20 @@ export const StyledHome = styled.main`
     border: solid 3px var(--dark-accent);
     border-radius: 10px;
     padding: 1rem 2rem;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+  }
 
+  .container-hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom {
+    margin-top: auto;
   }
 
   @media screen and (min-width: 400px) {
@@ -61,6 +71,27 @@ export const StyledHome = styled.main`
 
     .line-indent-2 {
       margin-left: 6rem;
+    }
+  }
+
+  @media screen and (min-width: 950px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .container-hero {
+      height: 500px;
+    }
+
+    .container-hero,
+    .container-about {
+      max-width: 500px;
+      width: 50%;
+    }
+
+    .container-about {
+      text-align: left;
     }
   }
 `;

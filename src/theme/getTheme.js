@@ -11,7 +11,6 @@ export const getTheme = (isDark) => {
           secondaryBG: "#AEFFD8",
           accent: "#ac8887",
         },
-
     syntax: {
       green: "#14A76C",
       purple: "#AD78DD",
@@ -22,6 +21,8 @@ export const getTheme = (isDark) => {
       gold: "#CEB06C",
       orange: "#D38843",
       lightGray: "#5c636c",
+      red: "#E06256",
+      white: "#fff",
     },
 
     tech: {

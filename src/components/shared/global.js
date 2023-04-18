@@ -42,6 +42,8 @@ export const GlobalStyles = createGlobalStyle`
         height: 100%;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
+
     }
 
     * {
@@ -70,7 +72,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .pg-pd {
-        padding-top: 2rem;
+        padding-top: 8rem;
     }
 
 

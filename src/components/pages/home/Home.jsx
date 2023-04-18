@@ -1,63 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { StyledHome } from "./Home.Styled";
-import {motion} from "framer-motion"
 import CodeBlock from "./hero/code-block/CodeBlock";
 import Button from "./hero/button/HeroBtn";
+import About from "./about/About";
+import DownArrow from "./down-arrow/DownArrow";
+import Skills from "./skills/Skills";
 
-const Home = () => {
+const Home = (props) => {
+  const [showElements, setShowElements] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowElements(true);
+    }, 7000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <StyledHome className="pg-pd">
+    <>
+      {showElements ? (
+        <StyledHome className="pg-pd">
+          <div className="container-hero">
+            <CodeBlock isMobile={props.isMobile} />
+            <Button />
+            {props.isMobile ? <DownArrow className="bottom" /> : null}
+          </div>
+          <div className="container-about">
+            <About />
+          </div>
 
-      <div className="container-hero">
-        <CodeBlock />
-        <Button />
-      </div>
-
-      <div className="container-about">
-      <div className="container-about-copy">
-        <motion.h2
-          initial={{ y: -2000 }}
-          transition={{ ease: "easeIn", duration: 0.5 }}
-          animate={{ y: 0 }}
-        >
-          Hi I'm Jake!
-        </motion.h2>
-        <motion.p
-          initial={{ x: -2000 }}
-          transition={{ ease: "easeIn", duration: 0.75 }}
-          animate={{ x: 0, delay: 1 }}
-          className="about-body"
-        >
-          I'm a Front-End Developer who's passionate about building beautiful,
-          engaging, responsive websites.
-        </motion.p>
-
-        <motion.p
-          initial={{ x: -2000 }}
-          transition={{ ease: "easeIn", duration: 1 }}
-          animate={{ x: 0 }}
-          className="about-body"
-        >
-          I love building things for the web! Whether it be using the latest
-          frameworks and libraries or starting from scratch with vanilla JS and
-          custom CSS properties.
-        </motion.p>
-
-        <motion.p
-          initial={{ x: -2000 }}
-          transition={{ ease: "easeIn", duration: 1.25 }}
-          animate={{ x: 0 }}
-          className="about-body"
-        >
-          Highly motivated, quick learner with eagerness to learn the whole
-          front end spectrum.
-        </motion.p>
-
-        
-      </div>
-      </div>
-      
-    </StyledHome>
+          <div className="container-skills">
+            <Skills isMobile={props.isMobile} />
+          </div>
+        </StyledHome>
+      ) : (
+        <StyledHome className="pg-pd">
+          <div className="container-hero">
+            <CodeBlock isMobile={props.isMobile} />
+            <Button />
+            {props.isMobile ? <DownArrow className="bottom" /> : null}
+          </div>
+        </StyledHome>
+      )}
+    </>
   );
 };
 

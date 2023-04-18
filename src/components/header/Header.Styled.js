@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
+  position: fixed;
+  z-index: 1;
 
   .logo {
     font-size: 1.75rem;
@@ -20,7 +23,7 @@ export const StyledHeader = styled.header`
   .nav-toggle {
     cursor: pointer;
     position: absolute;
-    right: 0;
+    right: 1rem;
     z-index: 1000;
     padding: 2rem 1rem;
   }

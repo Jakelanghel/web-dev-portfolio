@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { GlobalStyles } from "./components/shared/global";
 import { ThemeProvider } from "styled-components";
 import { getTheme } from "./theme/getTheme";
@@ -11,7 +11,16 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   const [isDark, setIsDark] = useState(true);
   const [navIsOpen, setNavIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
   const theme = getTheme(isDark);
+
+  useEffect(() => {
+    if (window.innerWidth >= 950) {
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+    }
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
@@ -22,7 +31,7 @@ function App() {
           {navIsOpen ? <MobileMenu setNavIsOpen={setNavIsOpen} /> : null}
         </AnimatePresence>
         <Header setNavIsOpen={setNavIsOpen} navIsOpen={navIsOpen} />
-        <Router />
+        <Router isMobile={isMobile} />
       </div>
     </ThemeProvider>
   );
