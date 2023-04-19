@@ -1,15 +1,14 @@
 import React from "react";
 import { StyledAbout } from "./About.Styled";
 import { motion } from "framer-motion";
+import { getAboutVariant } from "./variants/getAboutVariant";
 
-const About = () => {
+const About = (props) => {
+  const { isMobile } = props;
+  const variants = getAboutVariant(isMobile);
   return (
     <StyledAbout>
-      <motion.h2
-        initial={{ y: -2000 }}
-        transition={{ ease: "easeIn", duration: 0.5 }}
-        animate={{ y: 0 }}
-      >
+      <motion.h2 variants={variants} initial={"hidden"} animate={"visible"}>
         Hi I'm Jake!
       </motion.h2>
       <motion.p

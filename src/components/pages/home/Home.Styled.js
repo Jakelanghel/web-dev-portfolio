@@ -14,7 +14,7 @@ export const StyledHome = styled.main`
     border: solid 3px var(--dark-accent);
     border-radius: 10px;
     padding: 1rem 2rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -27,6 +27,13 @@ export const StyledHome = styled.main`
   }
 
   .bottom {
+    margin-top: auto;
+  }
+
+  .arrow {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
     margin-top: auto;
   }
 

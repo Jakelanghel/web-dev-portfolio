@@ -3,11 +3,12 @@ import { StyledHome } from "./Home.Styled";
 import CodeBlock from "./hero/code-block/CodeBlock";
 import Button from "./hero/button/HeroBtn";
 import About from "./about/About";
-import DownArrow from "./down-arrow/DownArrow";
+import Arrow from "./arrow/Arrow";
 import Skills from "./skills/Skills";
 
 const Home = (props) => {
   const [showElements, setShowElements] = useState(false);
+  const { isMobile } = props;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -22,24 +23,24 @@ const Home = (props) => {
       {showElements ? (
         <StyledHome className="pg-pd">
           <div className="container-hero">
-            <CodeBlock isMobile={props.isMobile} />
+            <CodeBlock isMobile={isMobile} />
             <Button />
-            {props.isMobile ? <DownArrow className="bottom" /> : null}
+            {isMobile ? <Arrow className="bottom" /> : null}
           </div>
           <div className="container-about">
-            <About />
+            <About isMobile={isMobile} />
           </div>
 
           <div className="container-skills">
-            <Skills isMobile={props.isMobile} />
+            <Skills isMobile={isMobile} />
           </div>
         </StyledHome>
       ) : (
         <StyledHome className="pg-pd">
           <div className="container-hero">
-            <CodeBlock isMobile={props.isMobile} />
+            <CodeBlock isMobile={isMobile} />
             <Button />
-            {props.isMobile ? <DownArrow className="bottom" /> : null}
+            {isMobile ? <Arrow className="bottom" /> : null}
           </div>
         </StyledHome>
       )}

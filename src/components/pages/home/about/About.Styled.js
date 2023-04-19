@@ -26,13 +26,6 @@ export const StyledAbout = styled.div`
     margin-bottom: 1rem;
   }
 
-  .container-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3.5rem;
-  }
-
   @media screen and (min-width: 900px) {
     display: flex;
     flex-direction: column;

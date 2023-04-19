@@ -5,22 +5,18 @@ import { getTheme } from "./theme/getTheme";
 import Router from "./components/router/Router";
 import Header from "./components/header/Header";
 import MobileMenu from "./components/header/nav/mobile-nav/MobileNav";
+import { useMediaQuery } from "./hooks/useMediaQuery";
 
 import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [isDark, setIsDark] = useState(true);
   const [navIsOpen, setNavIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(true);
+  // const [isMobile, setIsMobile] = useState(useMediaQuery("(max-width: 900px)"));
   const theme = getTheme(isDark);
 
-  useEffect(() => {
-    if (window.innerWidth >= 950) {
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-    }
-  }, []);
+  const isMobile = useMediaQuery("(max-width: 900px)");
+  console.log(isMobile);
 
   return (
     <ThemeProvider theme={theme}>

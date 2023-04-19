@@ -81,6 +81,11 @@ export const GlobalStyles = createGlobalStyle`
         }
     }
 
+    .filter-blue {
+        filter: invert(78%) sepia(48%) saturate(4999%) hue-rotate(179deg)
+      brightness(101%) contrast(87%);
+    }
+
 
 
    
