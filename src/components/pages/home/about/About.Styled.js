@@ -27,7 +27,7 @@ export const StyledAbout = styled.div`
     margin-bottom: 1rem;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 800px) {
     width: 45%;
     text-align: left;
     padding-top: 0;

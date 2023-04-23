@@ -10,7 +10,7 @@ const ContextProvider = ({ children }) => {
   const [showElements, setShowElements] = useState(false);
   const theme = getTheme(isDark);
 
-  const isMobile = useMediaQuery("(max-width: 900px)");
+  const isMobile = useMediaQuery("(max-width: 800px)");
 
   return (
     <Context.Provider

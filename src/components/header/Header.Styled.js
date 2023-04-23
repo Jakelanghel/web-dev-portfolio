@@ -11,7 +11,7 @@ export const StyledHeader = styled.header`
 
   .logo {
     font-size: 1.75rem;
-    color: var(--dark-accent);
+    color: ${({ theme }) => theme.main.accent};
     letter-spacing: 5px;
     margin: 0;
 
@@ -36,7 +36,7 @@ export const StyledHeader = styled.header`
   .hamburger,
   .hamburger::before,
   .hamburger::after {
-    background-color: var(--dark-accent);
+    background-color: ${({ theme }) => theme.main.accent};
     width: 30px;
     height: 3px;
     border-radius: 1em;
@@ -65,7 +65,7 @@ export const StyledHeader = styled.header`
   .nav-open .hamburger,
   .nav-open .hamburger::before,
   .nav-open .hamburger::after {
-    background: var(--dark-accent);
+    background: ${({ theme }) => theme.main.accent};
   }
 
   .nav-open .nav-toggle {

@@ -49,20 +49,12 @@ export const StyledCodeBlock = styled(motion.div)`
     }
   }
 
-  /* @media screen and (min-width: 425px) {
-    min-width: 400px;
-    min-height: 355px;
+  @media screen and (min-width: 800px) {
+    min-width: 350px;
 
-    .container-stx {
+    .container-stx,
+    .container-stx-static {
       font-size: 1.25rem;
     }
-
-    .line-indent-1 {
-      margin-left: 2.5em;
-    }
-
-    .line-indent-2 {
-      margin-left: 3em;
-    }
-  } */
+  }
 `;

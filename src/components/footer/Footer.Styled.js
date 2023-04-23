@@ -5,6 +5,7 @@ export const StyledFooter = styled.footer`
   padding: 0 1rem;
   display: flex;
   justify-content: space-between;
+  filter: ${(props) => props.filter};
 
   .container-footer-link {
     width: 50px;

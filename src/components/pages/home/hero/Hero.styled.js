@@ -11,9 +11,9 @@ export const StyledHero = styled.div`
     font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: 1px;
-    color: var(--dark-accent);
+    color: ${({ theme }) => theme.main.accent};
     background-color: transparent;
-    border: solid 3px var(--dark-accent);
+    border: solid 3px ${({ theme }) => theme.main.accent};
     border-radius: 10px;
     padding: 1rem 2rem;
     margin-left: auto;
@@ -27,7 +27,7 @@ export const StyledHero = styled.div`
     margin: 0 auto;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 800px) {
     width: 45%;
   }
 `;

@@ -4,12 +4,10 @@ export const StyledHome = styled.main`
   width: 100%;
   height: 100%;
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 800px) {
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 50px;
     justify-content: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 `;

@@ -12,7 +12,7 @@ export const StyledMobileMenu = styled(motion.nav)`
   background-color: black;
   padding-top: 10rem;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;

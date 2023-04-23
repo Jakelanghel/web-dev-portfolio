@@ -1,22 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { StyledHome } from "./Home.Styled";
+import { Context } from "../../../Context";
 import CodeBlock from "./hero/code-block/code-block-animated/CodeBlockAnimated";
 import About from "./about/About";
 import Skills from "./skills/Skills";
 import Hero from "./hero/Hero";
 
-const Home2 = (props) => {
-  const { isMobile, showElements } = props;
+const Home2 = () => {
+  const { isMobile, showElements } = React.useContext(Context);
 
   return (
     <StyledHome className="pg-pd">
       {!showElements ? (
-        <CodeBlock isMobile={isMobile} />
+        <CodeBlock />
       ) : (
         <>
           <Hero isMobile={isMobile} />
-          <About isMobile={isMobile} />
-          <Skills isMobile={isMobile} />
+          <About />
+          <Skills />
         </>
       )}
     </StyledHome>

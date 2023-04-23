@@ -8,7 +8,7 @@ const Hero = (props) => {
   const { isMobile } = props;
   return (
     <StyledHero>
-      <CodeBlock isMobile={isMobile} />
+      <CodeBlock />
       <button>My Work</button>
       {isMobile ? <Arrow className="bottom" isMobile={isMobile} /> : null}
     </StyledHero>
