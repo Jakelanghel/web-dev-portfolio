@@ -4,11 +4,7 @@ import { images } from "../../../../constants/images";
 
 const Skills = () => {
   return (
-    <StyledSkills
-    // initial={{ x: "-100vw", opacity: 0 }}
-    // animate={{ x: 0, opacity: 1 }}
-    // transition={{ delay: 7 }}
-    >
+    <StyledSkills>
       <h2>Skills</h2>
       <div className="container-flex ">
         <div className="container-skill">

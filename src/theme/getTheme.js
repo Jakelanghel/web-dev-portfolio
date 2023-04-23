@@ -5,6 +5,8 @@ export const getTheme = (isDark) => {
           primaryBG: "#282C34",
           secondaryBG: "#181818",
           accent: "#58AFEF",
+          accentFilter: `  filter: invert(78%) sepia(48%) saturate(4999%) hue-rotate(179deg)
+                            brightness(101%) contrast(87%);`,
         }
       : {
           primaryBG: "#fff",

@@ -1,7 +1,10 @@
-import Typewriter from "./typewriter/Typewriter";
-import { StyledCodeLine } from "./CodeLine.Styled";
+import React from "react";
+import { StyledCodeBlock } from "../shared/CodeBlock.Styled.js.js";
+import { codeData } from "../code-data/codeData.js";
+import Typewriter from "./typewriter/Typewriter.jsx";
+import { StyledCodeLine } from "../shared/CodeLine.Styled.js";
 
-export const getCodeLines = (codeData) => {
+const CodeBlock = (props) => {
   const lineElements = codeData.map((lineData, i) => {
     const line = lineData.map((data, i) => {
       if (data.multi) {
@@ -21,7 +24,6 @@ export const getCodeLines = (codeData) => {
               txt={data.txt}
               txtColor={data.txtColor}
               startDelay={data.startDelay}
-              className={data.class}
             />
           </div>
         );
@@ -31,5 +33,7 @@ export const getCodeLines = (codeData) => {
     return <StyledCodeLine key={i}>{line}</StyledCodeLine>;
   });
 
-  return lineElements;
+  return <StyledCodeBlock>{lineElements}</StyledCodeBlock>;
 };
+
+export default CodeBlock;

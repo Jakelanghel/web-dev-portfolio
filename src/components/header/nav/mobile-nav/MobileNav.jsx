@@ -2,10 +2,11 @@ import React from "react";
 import { StyledMobileMenu } from "./MobileNav.Styled";
 import { NavLink } from "react-router-dom";
 import { mobileNavVariants } from "../variants/mobileNavVariants";
+import { Context } from "../../../../Context";
 import Links from "./links/Links";
 
 const MobileMenu = (props) => {
-  const { setNavIsOpen } = props;
+  const { setNavIsOpen } = React.useContext(Context);
 
   const handleClick = () => {
     setNavIsOpen(false);
@@ -46,7 +47,7 @@ const MobileMenu = (props) => {
         Contact
       </NavLink>
 
-      <Links/>
+      <Links />
     </StyledMobileMenu>
   );
 };

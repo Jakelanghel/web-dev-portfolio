@@ -1,46 +1,25 @@
 import React from "react";
 import { StyledAbout } from "./About.Styled";
-import { motion } from "framer-motion";
-import { getAboutVariant } from "./variants/getAboutVariant";
 
-const About = (props) => {
-  const { isMobile } = props;
-  const variants = getAboutVariant(isMobile);
+const About = () => {
   return (
     <StyledAbout>
-      <motion.h2 variants={variants} initial={"hidden"} animate={"visible"}>
-        Hi I'm Jake!
-      </motion.h2>
-      <motion.p
-        initial={{ y: 2000 }}
-        transition={{ ease: "easeIn", duration: 0.75 }}
-        animate={{ y: 0, delay: 1 }}
-        className="about-body"
-      >
+      <h2>Hi I'm Jake!</h2>
+      <p className="about-body">
         I'm a Front-End Developer who's passionate about building beautiful,
         engaging, responsive websites.
-      </motion.p>
+      </p>
 
-      <motion.p
-        initial={{ y: 2000 }}
-        transition={{ ease: "easeIn", duration: 1 }}
-        animate={{ y: 0 }}
-        className="about-body"
-      >
+      <p className="about-body">
         I love building things for the web! Whether it be using the latest
         frameworks and libraries or starting from scratch with vanilla JS and
         custom CSS properties.
-      </motion.p>
+      </p>
 
-      <motion.p
-        initial={{ y: 2000 }}
-        transition={{ ease: "easeIn", duration: 1.25 }}
-        animate={{ y: 0 }}
-        className="about-body"
-      >
+      <p className="about-body">
         Highly motivated, quick learner with eagerness to learn the whole front
         end spectrum.
-      </motion.p>
+      </p>
     </StyledAbout>
   );
 };

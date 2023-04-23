@@ -1,33 +1,36 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { AnimatePresence } from "framer-motion";
+
+import { Context } from "./Context";
 import { GlobalStyles } from "./components/shared/global";
 import { ThemeProvider } from "styled-components";
-import { getTheme } from "./theme/getTheme";
+
 import Router from "./components/router/Router";
 import Header from "./components/header/Header";
 import MobileMenu from "./components/header/nav/mobile-nav/MobileNav";
-import { useMediaQuery } from "./hooks/useMediaQuery";
-
-import { AnimatePresence } from "framer-motion";
+import Footer from "./components/footer/Footer";
 
 function App() {
-  const [isDark, setIsDark] = useState(true);
-  const [navIsOpen, setNavIsOpen] = useState(false);
-  // const [isMobile, setIsMobile] = useState(useMediaQuery("(max-width: 900px)"));
-  const theme = getTheme(isDark);
+  const { navIsOpen, showElements, setShowElements, theme } =
+    useContext(Context);
 
-  const isMobile = useMediaQuery("(max-width: 900px)");
-  console.log(isMobile);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowElements(true);
+    }, 7000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
 
       <div className="container-app">
-        <AnimatePresence>
-          {navIsOpen ? <MobileMenu setNavIsOpen={setNavIsOpen} /> : null}
-        </AnimatePresence>
-        <Header setNavIsOpen={setNavIsOpen} navIsOpen={navIsOpen} />
-        <Router isMobile={isMobile} />
+        <AnimatePresence>{navIsOpen ? <MobileMenu /> : null}</AnimatePresence>
+        <Header />
+        <Router />
+        {showElements ? <Footer /> : null}
       </div>
     </ThemeProvider>
   );

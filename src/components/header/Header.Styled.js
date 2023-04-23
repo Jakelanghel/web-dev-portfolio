@@ -37,8 +37,8 @@ export const StyledHeader = styled.header`
   .hamburger::before,
   .hamburger::after {
     background-color: var(--dark-accent);
-    width: 35px;
-    height: 4px;
+    width: 30px;
+    height: 3px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
   }

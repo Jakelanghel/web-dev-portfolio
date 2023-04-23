@@ -35,7 +35,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     #root {
-        height: 100%;
+       height: 100%;
     }
 
     html, body {
@@ -56,6 +56,7 @@ export const GlobalStyles = createGlobalStyle`
         padding-bottom: 0;
         background-color: ${({ theme }) => theme.main.primaryBG};
         font-family: 'Roboto', sans-serif;
+        position: relative;
     }
 
     img, 
@@ -63,16 +64,18 @@ export const GlobalStyles = createGlobalStyle`
         display: block;
     }
 
+   
+
     .container-app {
-        height: 100%;
+        min-height: 100%;
         padding: 0 1rem;
         display: flex;
         flex-direction: column;
-        position: relative;
+        /* position: relative; */
     }
 
     .pg-pd {
-        padding-top: 8rem;
+        padding-top: 7rem;
     }
 
     @media screen and (min-width: 950px) {
@@ -85,9 +88,6 @@ export const GlobalStyles = createGlobalStyle`
         filter: invert(78%) sepia(48%) saturate(4999%) hue-rotate(179deg)
       brightness(101%) contrast(87%);
     }
-
-
-
    
     .filter-white {
         filter: invert(100%) sepia(0%) saturate(3787%) hue-rotate(139deg) brightness(112%) contrast(90%);

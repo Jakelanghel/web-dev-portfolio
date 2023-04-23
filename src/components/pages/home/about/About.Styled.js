@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
 export const StyledAbout = styled.div`
   width: 100%;
+  height: auto;
   text-align: center;
   position: relative;
   margin: 0 auto;
@@ -17,8 +17,9 @@ export const StyledAbout = styled.div`
   }
 
   .about-body {
+    max-width: 450px;
     margin: 0 auto;
-    font-size: 1.15rem;
+    font-size: 1.35rem;
     font-weight: 300;
     line-height: 2rem;
     letter-spacing: 1px;
@@ -26,22 +27,14 @@ export const StyledAbout = styled.div`
     margin-bottom: 1rem;
   }
 
-  @media screen and (min-width: 900px) {
-    display: flex;
-    flex-direction: column;
+  @media screen and (min-width: 1000px) {
+    width: 45%;
     text-align: left;
     padding-top: 0;
-    padding-left: 5rem;
 
     .about-body {
-      max-width: 550px;
-      font-size: 1.5rem;
-      margin: 0;
-      margin-bottom: 1.5rem;
-    }
-
-    h2 {
-      font-size: 4rem;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 `;

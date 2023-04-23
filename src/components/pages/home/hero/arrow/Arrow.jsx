@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { StyledAbout } from "../about/About.Styled";
 
 const Arrow = () => {
   const pathVariants = {
@@ -10,9 +9,8 @@ const Arrow = () => {
     visible: {
       pathLength: 1,
       transition: {
-        duration: 1.5,
+        duration: 2,
         ease: "easeInOut",
-        delay: 7,
       },
     },
   };
