@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 export const StyledCodeBlock = styled(motion.div)`
   min-height: 225px;
   max-width: 300px;
+  width: 350px;
   margin: 0 auto;
 
   .container-stx,

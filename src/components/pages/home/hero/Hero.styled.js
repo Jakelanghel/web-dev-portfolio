@@ -5,7 +5,7 @@ export const StyledHero = styled.div`
   min-height: 85vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 
   button {
     font-size: 1.25rem;
@@ -18,6 +18,7 @@ export const StyledHero = styled.div`
     padding: 1rem 2rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
     cursor: pointer;
   }
 
