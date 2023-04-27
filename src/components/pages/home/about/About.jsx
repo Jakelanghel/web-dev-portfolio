@@ -3,7 +3,7 @@ import { StyledAbout } from "./About.Styled";
 
 const About = () => {
   return (
-    <StyledAbout>
+    <StyledAbout className="about-section">
       <h2>Hi I'm Jake!</h2>
       <p className="about-body">
         I'm a Front-End Developer who's passionate about building beautiful,

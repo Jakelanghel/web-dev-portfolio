@@ -17,10 +17,11 @@ import html5Icon from "../assets/skill-icons/html5.svg";
 import jsIcon from "../assets/skill-icons/js.svg";
 import linuxIcon from "../assets/skill-icons/linux.svg";
 import nodeIcon from "../assets/skill-icons/node.svg";
-import fMentorLogo from "../assets/link-icons/f-mentor-logo.svg"
-import reactIcon from "../assets/skill-icons/react.svg"
-import windowsIcon from "../assets/skill-icons/windows.svg"
-import sassIcon from "../assets/skill-icons/sass.svg"
+import fMentorLogo from "../assets/link-icons/f-mentor-logo.svg";
+import reactIcon from "../assets/skill-icons/react.svg";
+import windowsIcon from "../assets/skill-icons/windows.svg";
+import sassIcon from "../assets/skill-icons/sass.svg";
+import caretDown from "../assets/general-icons/caret-down-solid.svg";
 
 export const images = {
   blogLanding,
@@ -32,15 +33,12 @@ export const images = {
   tipCal,
   urlShortner,
 
-
   githubBrands,
   githubIcon,
   linkedinIcon,
   fMentorLogo,
 
-
   downArrow,
-
 
   apiIcon,
   css3Icon,
@@ -52,5 +50,5 @@ export const images = {
   reactIcon,
   sassIcon,
   windowsIcon,
-  
+  caretDown,
 };

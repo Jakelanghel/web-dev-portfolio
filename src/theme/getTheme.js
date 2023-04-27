@@ -3,7 +3,8 @@ export const getTheme = (isDark) => {
     main: isDark
       ? {
           primaryBG: "#282C34",
-          secondaryBG: "#181818",
+          secondaryBG: "#e3e3e3",
+          txt1: "#ABB2BF",
           accent: "#58AFEF",
           accentFilter: `brightness(0) saturate(100%) invert(78%) sepia(48%) saturate(4999%) hue-rotate(179deg)
                          brightness(101%) contrast(87%)`,
@@ -11,8 +12,9 @@ export const getTheme = (isDark) => {
       : {
           primaryBG: "#fff",
           secondaryBG: "#AEFFD8",
-          accent: "#ac8887",
+          // accent: "#ac8887",
         },
+
     syntax: {
       green: "#14A76C",
       purple: "#AD78DD",
@@ -25,6 +27,7 @@ export const getTheme = (isDark) => {
       lightGray: "#5c636c",
       red: "#E06256",
       white: "#fff",
+      black: "#000",
     },
 
     tech: {

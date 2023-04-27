@@ -2,9 +2,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const StyledCodeBlock = styled(motion.div)`
-  min-height: 225px;
-  max-width: 300px;
-  width: 350px;
+  min-height: 250px;
+  width: 300px;
   margin: 0 auto;
 
   .container-stx,
@@ -32,30 +31,38 @@ export const StyledCodeBlock = styled(motion.div)`
     margin-left: 2.75em;
   }
 
-  @media screen and (min-width: 360px) {
-    max-width: 350px;
+  @media screen and (min-width: 400px) {
+    width: 350px;
 
     .container-stx,
     .container-stx-static {
       font-size: 1.15rem;
     }
+
+    .line-indent-1 {
+      margin-left: 1.75em;
+    }
+
+    .line-indent-2 {
+      margin-left: 3em;
+    }
   }
 
-  @media screen and (min-width: 400px) {
-    max-width: 425px;
-
+  @media screen and (min-width: 800px) {
+    width: 375px;
     .container-stx,
     .container-stx-static {
       font-size: 1.25rem;
     }
   }
+  @media screen and (min-width: 1000px) {
+    width: 450px;
 
-  @media screen and (min-width: 800px) {
-    min-width: 350px;
+    min-height: 300px;
 
     .container-stx,
     .container-stx-static {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   }
 `;

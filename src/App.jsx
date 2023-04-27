@@ -1,26 +1,15 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { AnimatePresence } from "framer-motion";
-
 import { Context } from "./Context";
 import { GlobalStyles } from "./components/shared/global";
 import { ThemeProvider } from "styled-components";
-
 import Router from "./components/router/Router";
 import Header from "./components/header/Header";
 import MobileMenu from "./components/header/nav/mobile-nav/MobileNav";
 import Footer from "./components/footer/Footer";
 
 function App() {
-  const { navIsOpen, showElements, setShowElements, theme } =
-    useContext(Context);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowElements(true);
-    }, 7000);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const { navIsOpen, showFooter, theme } = useContext(Context);
 
   return (
     <ThemeProvider theme={theme}>
@@ -30,7 +19,7 @@ function App() {
         <AnimatePresence>{navIsOpen ? <MobileMenu /> : null}</AnimatePresence>
         <Header />
         <Router />
-        {showElements ? <Footer /> : null}
+        {showFooter ? <Footer /> : null}
       </div>
     </ThemeProvider>
   );

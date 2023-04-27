@@ -59,6 +59,12 @@ export const GlobalStyles = createGlobalStyle`
         position: relative;
     }
 
+    button {
+        font-family: 'Roboto', sans-serif;
+
+
+    }
+
     img, 
     button {
         display: block;
@@ -71,16 +77,15 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0 1rem;
         display: flex;
         flex-direction: column;
-        /* position: relative; */
     }
 
     .pg-pd {
         padding-top: 7rem;
     }
 
-    @media screen and (min-width: 950px) {
+    @media screen and (min-width: 800px) {
         .pg-pd {
-            padding-top: 12rem;
+            padding-top: 8rem;
         }
     }
 

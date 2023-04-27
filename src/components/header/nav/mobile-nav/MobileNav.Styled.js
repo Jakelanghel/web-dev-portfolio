@@ -9,7 +9,7 @@ export const StyledMobileMenu = styled(motion.nav)`
   align-items: center;
   gap: 2rem;
 
-  background-color: black;
+  background-color: ${({ theme }) => theme.syntax.black};
   padding-top: 10rem;
 
   position: fixed;

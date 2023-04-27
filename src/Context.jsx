@@ -8,6 +8,7 @@ const ContextProvider = ({ children }) => {
   const [isDark, setIsDark] = useState(true);
   const [navIsOpen, setNavIsOpen] = useState(false);
   const [showElements, setShowElements] = useState(false);
+  const [showFooter, setShowFooter] = useState(false);
   const theme = getTheme(isDark);
 
   const isMobile = useMediaQuery("(max-width: 800px)");
@@ -23,6 +24,8 @@ const ContextProvider = ({ children }) => {
         showElements,
         setShowElements,
         theme,
+        showFooter,
+        setShowFooter,
       }}
     >
       {children}

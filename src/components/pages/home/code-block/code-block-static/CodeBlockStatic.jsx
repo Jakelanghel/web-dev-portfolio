@@ -1,5 +1,5 @@
-import { StyledCodeLine } from "../shared/CodeLine.Styled";
-import { StyledCodeBlock } from "../shared/CodeBlock.Styled.js.js";
+import { StyledCodeLine } from "../code-styled/CodeLine.Styled";
+import { StyledCodeBlock } from "../code-styled/CodeBlock.Styled.js.js";
 import { codeData } from "../code-data/codeData";
 
 import React from "react";

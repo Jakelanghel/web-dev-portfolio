@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHero = styled.div`
+export const StyledHero = styled.section`
   width: 100%;
   min-height: 85vh;
   display: flex;
@@ -30,5 +30,10 @@ export const StyledHero = styled.div`
 
   @media screen and (min-width: 800px) {
     width: 45%;
+    min-height: auto;
+
+    button {
+      margin-top: 5rem;
+    }
   }
 `;
