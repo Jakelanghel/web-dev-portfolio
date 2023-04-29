@@ -77,15 +77,22 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0 1rem;
         display: flex;
         flex-direction: column;
+        
     }
 
     .pg-pd {
         padding-top: 7rem;
     }
+    
 
     @media screen and (min-width: 800px) {
         .pg-pd {
-            padding-top: 8rem;
+            padding-top: 7rem;
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .pg-pd {
+            padding-top: 3rem;
         }
     }
 

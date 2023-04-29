@@ -6,7 +6,6 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
-  position: fixed;
   z-index: 1;
 
   .logo {
@@ -82,5 +81,13 @@ export const StyledHeader = styled.header`
 
   .nav-open .hamburger::after {
     opacity: 0;
+  }
+
+  @media screen and (min-width: 1000px) {
+    position: static;
+
+    .logo {
+      padding: 1.5rem;
+    }
   }
 `;

@@ -1,19 +1,19 @@
 import React from "react";
-import { StyledMobileMenu } from "./MobileNav.Styled";
+import { StyledNav } from "./Nav.Styled";
 import { NavLink } from "react-router-dom";
-import { mobileNavVariants } from "../variants/mobileNavVariants";
-import { Context } from "../../../../Context";
+import { mobileNavVariants } from "./variants/mobileNavVariants";
+import { Context } from "../../../Context";
 import Links from "./links/Links";
 
-const MobileMenu = (props) => {
-  const { setNavIsOpen } = React.useContext(Context);
+const MobileNav = () => {
+  const { setNavIsOpen, isDesktop } = React.useContext(Context);
 
   const handleClick = () => {
     setNavIsOpen(false);
   };
 
   return (
-    <StyledMobileMenu
+    <StyledNav
       initial="closed"
       animate="open"
       exit="closed"
@@ -47,9 +47,9 @@ const MobileMenu = (props) => {
         Contact
       </NavLink>
 
-      <Links />
-    </StyledMobileMenu>
+      {!isDesktop ? <Links /> : null}
+    </StyledNav>
   );
 };
 
-export default MobileMenu;
+export default MobileNav;

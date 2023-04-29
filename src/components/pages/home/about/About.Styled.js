@@ -25,7 +25,7 @@ export const StyledAbout = styled.section`
     font-weight: 300;
     line-height: 2rem;
     letter-spacing: 1px;
-    color: var(--whiteish);
+    color: ${({ theme }) => theme.main.txt1};
     margin-bottom: 1rem;
   }
 
@@ -33,10 +33,15 @@ export const StyledAbout = styled.section`
     width: 45%;
     text-align: left;
     padding-top: 0;
+    margin: 0;
+
+    h2 {
+      margin: 0;
+    }
 
     .about-body {
-      /* margin-left: 0;
-      margin-right: 0; */
+      margin: 0;
+      margin-bottom: 1rem;
     }
   }
 `;

@@ -2,8 +2,9 @@ export const getTheme = (isDark) => {
   const theme = {
     main: isDark
       ? {
-          primaryBG: "#282C34",
+          primaryBG: "#21252B",
           secondaryBG: "#e3e3e3",
+          codeBG: "#282C34",
           txt1: "#ABB2BF",
           accent: "#58AFEF",
           accentFilter: `brightness(0) saturate(100%) invert(78%) sepia(48%) saturate(4999%) hue-rotate(179deg)

@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledLinks } from "./Links.Styled";
-import { images } from "../../../../../constants/images";
+import { images } from "../../../../constants/images";
 
 const Links = () => {
   return (

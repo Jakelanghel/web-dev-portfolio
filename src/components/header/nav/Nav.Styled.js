@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const StyledMobileMenu = styled(motion.nav)`
+export const StyledNav = styled(motion.nav)`
   width: 100%;
   min-height: 100%;
   display: flex;
@@ -23,7 +23,6 @@ export const StyledMobileMenu = styled(motion.nav)`
     text-decoration: none;
     font-weight: 300;
     color: ${({ theme }) => theme.syntax.lightGray};
-    /* color: #5c6370; */
     font-style: italic;
     padding: 1.5rem;
   }
@@ -34,5 +33,18 @@ export const StyledMobileMenu = styled(motion.nav)`
   .active {
     color: ${({ theme }) => theme.main.accent};
     font-weight: 500;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 500px;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    padding-top: 0;
+
+    .nav-link {
+      font-size: 1.25rem;
+      padding: 1.5rem;
+    }
   }
 `;

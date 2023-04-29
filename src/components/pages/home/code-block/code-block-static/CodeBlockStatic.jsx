@@ -21,7 +21,7 @@ const CodeBlockStatic = () => {
     });
     return <StyledCodeLine key={i}>{line}</StyledCodeLine>;
   });
-  return <StyledCodeBlock>{codeLines}</StyledCodeBlock>;
+  return <StyledCodeBlock className="static">{codeLines}</StyledCodeBlock>;
 };
 
 export default CodeBlockStatic;

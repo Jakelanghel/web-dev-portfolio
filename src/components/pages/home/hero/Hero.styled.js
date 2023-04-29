@@ -18,22 +18,43 @@ export const StyledHero = styled.section`
     padding: 1rem 2rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
     cursor: pointer;
+  }
+
+  .container-arrow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .arrow {
     width: 150px;
-    height: auto;
     margin: 0 auto;
   }
 
   @media screen and (min-width: 800px) {
     width: 45%;
-    min-height: auto;
+    min-height: 80vh;
+    justify-content: flex-start;
 
     button {
       margin-top: 5rem;
+    }
+
+    .container-code {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .container-arrow {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
+
+    .arrow {
+      width: 150px;
     }
   }
 `;

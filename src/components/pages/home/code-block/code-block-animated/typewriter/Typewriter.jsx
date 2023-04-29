@@ -3,10 +3,7 @@ import React, { useState } from "react";
 import { getFontSize } from "./getFontSize";
 
 const Typewriter = (props) => {
-  // const [fontSize, setFontSize] = useState();
   const fontSize = getFontSize();
-  console.log(fontSize);
-  // const fontSize = "1rem";
   if (props.multi) {
     return (
       <div className="container-stx">

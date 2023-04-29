@@ -31,7 +31,7 @@ export const StyledCodeBlock = styled(motion.div)`
     margin-left: 2.75em;
   }
 
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 375px) {
     width: 350px;
 
     .container-stx,
@@ -48,13 +48,24 @@ export const StyledCodeBlock = styled(motion.div)`
     }
   }
 
-  @media screen and (min-width: 800px) {
-    width: 375px;
+  @media screen and (min-width: 400px) {
+    width: 385px;
+
     .container-stx,
     .container-stx-static {
       font-size: 1.25rem;
     }
   }
+
+  @media screen and (min-width: 800px) {
+    width: 375px;
+    margin: 0;
+    .container-stx,
+    .container-stx-static {
+      font-size: 1.25rem;
+    }
+  }
+
   @media screen and (min-width: 1000px) {
     width: 450px;
 

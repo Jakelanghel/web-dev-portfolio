@@ -24,7 +24,6 @@ export const StyledSkills = styled.div`
 
   .container-flex {
     width: 95%;
-    /* max-width: 00px; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -47,10 +46,10 @@ export const StyledSkills = styled.div`
     max-width: 75px;
   }
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 800px) {
     margin: 0;
-    padding-top: 12rem;
-    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
 
     h2 {
       font-size: 4rem;

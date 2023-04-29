@@ -33,7 +33,7 @@ const CodeBlockAnimated = () => {
     return <StyledCodeLine key={i}>{line}</StyledCodeLine>;
   });
 
-  return <StyledCodeBlock>{lineElements}</StyledCodeBlock>;
+  return <StyledCodeBlock className="animated">{lineElements}</StyledCodeBlock>;
 };
 
 export default CodeBlockAnimated;
