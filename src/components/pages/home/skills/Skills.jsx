@@ -8,24 +8,6 @@ const Skills = () => {
       <h2>Skills</h2>
       <div className="container-flex ">
         <div className="container-skill">
-          <h3>HTML5</h3>
-          <img
-            src={images.html5Icon}
-            alt="html 5"
-            className="skill-img filter-html-color"
-          />
-        </div>
-
-        <div className="container-skill">
-          <h3>CSS</h3>
-          <img
-            src={images.css3Icon}
-            alt="css"
-            className="skill-img filter-css-color"
-          />
-        </div>
-
-        <div className="container-skill">
           <h3>Java Script</h3>
           <img
             src={images.jsIcon}
@@ -40,6 +22,42 @@ const Skills = () => {
             src={images.reactIcon}
             alt="react"
             className="skill-img filter-react-color"
+          />
+        </div>
+
+        <div className="container-skill">
+          <h3>Node JS</h3>
+          <img
+            src={images.nodeIcon}
+            alt="Node JS"
+            className="skill-img filter-node-color"
+          />
+        </div>
+
+        <div className="container-skill">
+          <h3>Mongo DB</h3>
+          <img
+            src={images.mongoIcon}
+            alt="Mongo database"
+            className="skill-img mongo"
+          />
+        </div>
+
+        <div className="container-skill">
+          <h3>HTML5</h3>
+          <img
+            src={images.html5Icon}
+            alt="html 5"
+            className="skill-img filter-html-color"
+          />
+        </div>
+
+        <div className="container-skill">
+          <h3>Styled Components</h3>
+          <img
+            src={images.styledIcon}
+            alt="react styled components"
+            className="skill-img styled "
           />
         </div>
 
@@ -62,20 +80,20 @@ const Skills = () => {
         </div>
 
         <div className="container-skill">
+          <h3>CSS</h3>
+          <img
+            src={images.css3Icon}
+            alt="css"
+            className="skill-img filter-css-color"
+          />
+        </div>
+
+        <div className="container-skill">
           <h3>Api</h3>
           <img
             src={images.apiIcon}
             alt="api"
             className="skill-img filter-purple"
-          />
-        </div>
-
-        <div className="container-skill">
-          <h3>Node JS</h3>
-          <img
-            src={images.nodeIcon}
-            alt="Node JS"
-            className="skill-img filter-node-color"
           />
         </div>
 

@@ -29,6 +29,8 @@ export const StyledProjectCard = styled.div`
 
   .project-img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
     margin: 0 auto;
     border-radius: 10px;
     border-radius: 15px;
@@ -60,7 +62,7 @@ export const StyledProjectCard = styled.div`
   .tech-name {
     font-size: 1rem;
     padding: 0.5rem 0;
-    color: ${({ theme }) => theme.syntax.lightGray};
+    color: ${({ theme }) => theme.main.accent};
   }
 
   .more-info-btn {

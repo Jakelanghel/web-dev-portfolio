@@ -30,7 +30,7 @@ export const StyledAbout = styled.section`
   }
 
   @media screen and (min-width: 800px) {
-    width: 45%;
+    width: 47%;
     text-align: left;
     padding-top: 0;
     margin: 0;

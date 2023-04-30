@@ -22,6 +22,8 @@ import reactIcon from "../assets/skill-icons/react.svg";
 import windowsIcon from "../assets/skill-icons/windows.svg";
 import sassIcon from "../assets/skill-icons/sass.svg";
 import caretDown from "../assets/general-icons/caret-down-solid.svg";
+import mongoIcon from "../assets/skill-icons/mongo.svg";
+import styledIcon from "../assets/skill-icons/styled-components.png";
 
 export const images = {
   blogLanding,
@@ -51,4 +53,6 @@ export const images = {
   sassIcon,
   windowsIcon,
   caretDown,
+  mongoIcon,
+  styledIcon,
 };

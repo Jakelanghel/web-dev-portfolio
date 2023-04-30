@@ -5,7 +5,7 @@ export const StyledHero = styled.section`
   min-height: 85vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 
   button {
     font-size: 1.25rem;
@@ -25,6 +25,7 @@ export const StyledHero = styled.section`
     width: 100%;
     display: flex;
     justify-content: center;
+    /* margin-top: auto; */
   }
 
   .arrow {
@@ -34,6 +35,8 @@ export const StyledHero = styled.section`
 
   @media screen and (min-width: 800px) {
     width: 45%;
+    max-width: 450px;
+    margin-left: auto;
     min-height: 80vh;
     justify-content: flex-start;
 

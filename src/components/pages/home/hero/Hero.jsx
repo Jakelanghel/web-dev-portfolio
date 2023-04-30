@@ -11,6 +11,7 @@ const Hero = () => {
         <CodeBlockStatic className="static" />
       </div>
       <button>My Work</button>
+
       <Arrow />
     </StyledHero>
   );

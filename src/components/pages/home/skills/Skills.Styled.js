@@ -16,10 +16,11 @@ export const StyledSkills = styled.div`
   }
 
   h3 {
-    font-size: 1rem;
+    text-align: center;
+    font-size: 1.15rem;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
-    color: ${({ theme }) => theme.syntax.white};
+    color: ${({ theme }) => theme.main.txt1};
   }
 
   .container-flex {
@@ -27,23 +28,29 @@ export const StyledSkills = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .container-skill {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .container-skill {
-    width: 40%;
+    width: 45%;
     margin-bottom: 2.5rem;
     border-radius: 10%;
+    background-color: ${({ theme }) => theme.main.codeBg};
   }
 
   .skill-img {
-    width: 70%;
-    max-width: 75px;
+    width: 75px;
+  }
+
+  .styled {
+    width: 100px;
+  }
+
+  .mongo {
+    width: 100px;
   }
 
   @media screen and (min-width: 800px) {
@@ -55,14 +62,16 @@ export const StyledSkills = styled.div`
       font-size: 4rem;
     }
 
+    .container-flex {
+      padding: 2rem 0;
+      gap: 2rem;
+    }
+
     .container-skill {
       width: 25%;
-      margin-bottom: 2.5rem;
-      border-radius: 10%;
     }
 
     .skill-img {
-      max-width: 50px;
     }
   }
 `;
