@@ -33,6 +33,10 @@ export const StyledNav = styled(motion.nav)`
   .active {
     color: ${({ theme }) => theme.main.accent};
     font-weight: 500;
+
+    span {
+      opacity: 0;
+    }
   }
 
   @media screen and (min-width: 1000px) {

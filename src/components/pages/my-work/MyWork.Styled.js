@@ -2,9 +2,18 @@ import styled from "styled-components";
 
 export const StyledMyWork = styled.main`
   width: 100%;
+  padding-bottom: 3rem;
+
+  .container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+  }
 
   .container-filter {
-    max-width: 500px;
+    max-width: 375px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -34,11 +43,35 @@ export const StyledMyWork = styled.main`
     margin-top: 3rem;
   }
 
+  .container-card {
+    width: 350px;
+    position: relative;
+  }
+  .more-info-open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
   @media screen and (min-width: 800px) {
     .container-projects {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    .container-projects {
+      gap: 3.5rem;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .container-projects {
+      padding: 0 1.5rem;
     }
   }
 `;

@@ -80,11 +80,6 @@ export const GlobalStyles = createGlobalStyle`
         
     }
 
-    .pg-pd {
-        padding-top: 7rem;
-    }
-    
-
     @media screen and (min-width: 800px) {
         .pg-pd {
             padding-top: 7rem;

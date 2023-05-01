@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,6 +87,8 @@ export const StyledHeader = styled.header`
 
   @media screen and (min-width: 1000px) {
     position: static;
+    padding-left: 3rem;
+    padding-right: 3rem;
 
     .logo {
       padding: 1.5rem;

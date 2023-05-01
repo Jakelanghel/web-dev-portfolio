@@ -39,22 +39,22 @@ const MyWork = () => {
 
     return arr.map((proj) => {
       return (
-        <ProjectCard
-          key={proj.name}
-          img={proj.img}
-          name={proj.name}
-          tech={proj.tech}
-          repo={proj.repo}
-          liveSite={proj.liveSite}
-        />
+        <div className="container-card" key={proj.name}>
+          <ProjectCard
+            img={proj.img}
+            name={proj.name}
+            tech={proj.tech}
+            repo={proj.repo}
+            liveSite={proj.liveSite}
+          />
+        </div>
       );
     });
   };
 
   const cards = getProjCards(active);
-
   return (
-    <StyledMyWork className="pg-pd">
+    <StyledMyWork>
       <div className="container-filter">{filterBtns}</div>
 
       <div className="container-projects">{cards}</div>

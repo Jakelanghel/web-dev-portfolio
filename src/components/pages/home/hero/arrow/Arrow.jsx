@@ -10,6 +10,7 @@ const Arrow = () => {
     visible: {
       pathLength: 1,
       transition: {
+        delay: 1,
         duration: 2,
         ease: "easeInOut",
       },

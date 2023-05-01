@@ -49,7 +49,7 @@ export const StyledCodeBlock = styled(motion.div)`
   }
 
   @media screen and (min-width: 400px) {
-    width: 375px;
+    min-width: 375px;
 
     .container-stx,
     .container-stx-static {
@@ -59,10 +59,16 @@ export const StyledCodeBlock = styled(motion.div)`
 
   @media screen and (min-width: 800px) {
     min-height: 315px;
+    min-width: 400px;
+
+    .container-stx,
+    .container-stx-static {
+      font-size: 1.35rem;
+    }
   }
 
   @media screen and (min-width: 1000px) {
-    width: 450px;
+    min-width: 450px;
 
     min-height: 300px;
 

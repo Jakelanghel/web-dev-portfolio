@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { getTheme } from "./theme/getTheme";
-
 const Context = React.createContext();
 
 const ContextProvider = ({ children }) => {

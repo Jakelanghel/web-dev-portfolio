@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 1rem;
   display: flex;
   justify-content: space-between;
@@ -14,5 +16,9 @@ export const StyledFooter = styled.footer`
 
   img {
     width: 100%;
+  }
+
+  @media screen and (min-width: 800px) {
+    padding-top: 8rem;
   }
 `;

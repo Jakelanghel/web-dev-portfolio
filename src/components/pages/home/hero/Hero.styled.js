@@ -7,9 +7,10 @@ export const StyledHero = styled.section`
   flex-direction: column;
   justify-content: space-around;
 
-  button {
+  .my-work-btn {
     font-size: 1.25rem;
     font-weight: 700;
+    text-decoration: none;
     letter-spacing: 1px;
     color: ${({ theme }) => theme.main.accent};
     background-color: transparent;
@@ -25,7 +26,6 @@ export const StyledHero = styled.section`
     width: 100%;
     display: flex;
     justify-content: center;
-    /* margin-top: auto; */
   }
 
   .arrow {
@@ -36,11 +36,12 @@ export const StyledHero = styled.section`
   @media screen and (min-width: 800px) {
     width: 45%;
     max-width: 450px;
+    min-height: none;
     margin-left: auto;
     min-height: 80vh;
     justify-content: flex-start;
 
-    button {
+    .my-work-btn {
       margin-top: 5rem;
     }
 

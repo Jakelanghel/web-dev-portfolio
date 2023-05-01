@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
 export const StyledProjectCard = styled.div`
-  width: 95%;
+  width: 100%;
   max-width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   background-color: ${({ theme }) => theme.main.secondaryBG};
 
   border-radius: 15px;
   padding: 1rem;
   margin: 0 auto;
-  margin-bottom: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
   a {
     text-decoration: none;
@@ -82,9 +81,14 @@ export const StyledProjectCard = styled.div`
       rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   }
 
-  .drop-down-arrow {
+  .arrow-close,
+  .arrow-open {
     width: 10px;
     filter: ${({ theme }) => theme.main.accentFilter};
+  }
+
+  .arrow-close {
+    transform: rotate(180deg);
   }
 
   .container-links {

@@ -19,6 +19,7 @@ const Home = () => {
     setHomeElementsVisible(true);
     setShowFooter(true);
   };
+
   return (
     <StyledHome className="home-page">
       <AnimatePresence mode="wait">

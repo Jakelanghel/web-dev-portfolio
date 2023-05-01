@@ -8,10 +8,10 @@ export const StyledAbout = styled.section`
   margin: 0 auto;
   padding-top: 3rem;
 
-  h2 {
+  h1 {
     max-width: 450px;
     margin: 0 auto;
-    font-size: 3rem;
+    font-size: 3.5rem;
     letter-spacing: 2px;
     text-transform: capitalize;
     color: var(--dark-accent);
@@ -30,12 +30,12 @@ export const StyledAbout = styled.section`
   }
 
   @media screen and (min-width: 800px) {
-    width: 47%;
+    width: 45%;
     text-align: left;
     padding-top: 0;
     margin: 0;
 
-    h2 {
+    h1 {
       margin: 0;
     }
 

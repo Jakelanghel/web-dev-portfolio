@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
 export const StyledSkills = styled.div`
   width: 100%;
@@ -11,7 +10,7 @@ export const StyledSkills = styled.div`
 
   h2 {
     margin-bottom: 3rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: ${({ theme }) => theme.main.accent};
   }
 
@@ -56,7 +55,6 @@ export const StyledSkills = styled.div`
   @media screen and (min-width: 800px) {
     margin: 0;
     padding-top: 5rem;
-    padding-bottom: 10rem;
 
     h2 {
       font-size: 4rem;
